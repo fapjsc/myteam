@@ -1,0 +1,38 @@
+// FONT VARIABLES
+// $font-primary: 'Nunito', sans-serif;
+// $font-display: 'Josefin Sans', sans-serif;
+
+// ============
+//     Color
+// ============
+$color-primary-green: #014156;
+$color-primary-caral: #f67e7e;
+$color-white: #fff;
+
+$color-blue-light: #79c8c7;
+$color-blue-dark: #2c6269;
+
+$color-green: #004047;
+$color-green-dark-1: #012f34;
+$color-green-dark-2: #002529;
+
+// FONT VARIABLES
+$font-primary: 'Livvic', sans-serif;
+
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 600;
+}
