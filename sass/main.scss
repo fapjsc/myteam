@@ -1,5 +1,13 @@
 @import 'base/base';
 @import 'base/typography';
+@import 'base/utilities';
+
+@import 'layout/footer';
+@import 'layout/header';
+
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/homes';
 
 @import 'components/ask';
 @import 'components/button';
@@ -9,10 +17,4 @@
 @import 'components/form';
 @import 'components/meet';
 @import 'components/story';
-
-@import 'layout/footer';
-@import 'layout/header';
-
-@import 'pages/about';
-@import 'pages/contact';
-@import 'pages/homes';
+@import 'components/navigation';

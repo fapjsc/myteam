@@ -5,14 +5,14 @@
 // ============
 //     Color
 // ============
-$color-primary-green: #014156;
+$color-primary-green: #014e56;
 $color-primary-caral: #f67e7e;
 $color-white: #fff;
 
 $color-blue-light: #79c8c7;
 $color-blue-dark: #2c6269;
 
-$color-green: #004047;
+$color-green-light: #004047;
 $color-green-dark-1: #012f34;
 $color-green-dark-2: #002529;
 
@@ -35,4 +35,5 @@ html {
 body {
   font-family: $font-primary;
   font-weight: 600;
+  line-height: 1.6;
 }
