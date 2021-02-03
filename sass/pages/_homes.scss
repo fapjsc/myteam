@@ -58,4 +58,14 @@
 
 .footer {
   background-color: $color-green-dark-2;
+  display: grid;
+  grid-template-rows:
+    minmax(min-content, 4.8rem)
+    minmax(min-content, 10rem)
+    minmax(min-content, 4.8rem);
+
+  grid-template-columns:
+    minmax(min-content, 16.5rem)
+    minmax(min-content, 111rem)
+    minmax(min-content, 16.5rem);
 }
