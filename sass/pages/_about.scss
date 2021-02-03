@@ -1,10 +1,6 @@
 .about-container {
   max-width: 144rem;
   margin: 10rem auto;
-
-  & > * {
-    font-size: 5rem;
-  }
 }
 
 .about-header {
@@ -24,6 +20,16 @@
 
 .about-meet {
   background-color: $color-green-light;
+  display: grid;
+  grid-template-rows:
+    minmax(min-content, 14rem)
+    minmax(min-content, 72.2rem)
+    minmax(min-content, 14rem);
+
+  grid-template-columns:
+    minmax(min-content, 16.5rem)
+    minmax(min-content, 111rem)
+    minmax(min-content, 16.5rem);
 }
 
 .about-client {
