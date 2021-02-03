@@ -44,6 +44,16 @@
 
 .cta {
   background-color: $color-primary-caral;
+  display: grid;
+  grid-template-rows:
+    minmax(min-content, 7.6rem)
+    minmax(min-content, 4.8rem)
+    minmax(min-content, 7.6rem);
+
+  grid-template-columns:
+    minmax(min-content, 26rem)
+    minmax(min-content, 91.7rem)
+    minmax(min-content, 26rem);
 }
 
 .footer {

@@ -31,6 +31,12 @@ body {
   font-weight: bold;
   line-height: 1; }
 
+.heading-3-green {
+  color: #012f34;
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 1; }
+
 .heading-4 {
   color: #f67e7e;
   font-size: 1.8rem;
@@ -119,7 +125,10 @@ body {
   grid-template-rows: minmax(min-content, 14rem) minmax(min-content, 46.5rem) minmax(min-content, 14rem); }
 
 .cta {
-  background-color: #f67e7e; }
+  background-color: #f67e7e;
+  display: grid;
+  grid-template-rows: minmax(min-content, 7.6rem) minmax(min-content, 4.8rem) minmax(min-content, 7.6rem);
+  grid-template-columns: minmax(min-content, 26rem) minmax(min-content, 91.7rem) minmax(min-content, 26rem); }
 
 .footer {
   background-color: #002529; }
@@ -147,6 +156,20 @@ body {
   .btn-green:hover {
     background-color: #012f34;
     color: #fff; }
+
+.cta {
+  position: relative; }
+  .cta__content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.home-6 {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
 
 .features {
   overflow: hidden;

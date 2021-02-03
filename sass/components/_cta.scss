@@ -1,0 +1,17 @@
+.cta {
+  position: relative;
+
+  &__content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.home-6 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
