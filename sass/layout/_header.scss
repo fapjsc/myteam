@@ -14,9 +14,12 @@
     }
   }
 
+  &__title {
+    height: 20rem;
+  }
+
   &__text {
     font-size: 1.8rem;
-    margin-top: 8rem;
     line-height: 1.6;
     color: $color-white;
   }
@@ -32,4 +35,11 @@
     align-self: end;
     justify-self: end;
   }
+}
+
+.text-box {
+  height: 19.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
