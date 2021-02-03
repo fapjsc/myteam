@@ -53,6 +53,12 @@ body {
   font-weight: 600;
   line-height: 1.66; }
 
+.paragraph-dark {
+  color: #99a8a9;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.66; }
+
 .paragraph-italic {
   color: #fff;
   font-size: 1.5rem;
