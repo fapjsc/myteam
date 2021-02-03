@@ -42,6 +42,13 @@ body {
   font-weight: 600;
   line-height: 1.7; }
 
+.paragraph-small {
+  color: #fff;
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4; }
+
 .short-line {
   height: 4px;
   width: 5rem;
@@ -105,7 +112,11 @@ body {
   padding: 14rem 0; }
 
 .story {
-  background-color: #004047; }
+  height: 74.5rem;
+  background-color: #004047;
+  display: grid;
+  grid-template-columns: minmax(min-content, 16.5rem) minmax(min-content, 110rem) minmax(min-content, 16.5rem);
+  grid-template-rows: minmax(min-content, 14rem) minmax(min-content, 46.5rem) minmax(min-content, 14rem); }
 
 .cta {
   background-color: #f67e7e; }
@@ -114,19 +125,28 @@ body {
   background-color: #002529; }
 
 .btn {
-  border: 2px solid #fff;
   font-size: 1.8rem;
   padding: 1.1rem 3.3rem;
   border-radius: 5rem;
-  background-color: #014e56;
-  color: #fff;
+  background-color: transparent;
   cursor: pointer;
   transition: all 0.2s; }
-  .btn:hover {
-    background-color: #fff;
-    color: #002529; }
   .btn:focus {
     outline: none; }
+
+.btn-white {
+  border: 2px solid #fff;
+  color: #fff; }
+  .btn-white:hover {
+    background-color: #fff;
+    color: #002529; }
+
+.btn-green {
+  border: 2px solid #012f34;
+  color: #012f34; }
+  .btn-green:hover {
+    background-color: #012f34;
+    color: #fff; }
 
 .features {
   overflow: hidden;
@@ -162,6 +182,42 @@ body {
     position: absolute;
     bottom: 0;
     right: -10rem; }
+
+.story {
+  position: relative; }
+  .story__content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 34.6rem));
+    grid-gap: 5.6rem 3rem; }
+    .story__content h3 {
+      grid-column: 1 / -1;
+      text-align: center; }
+    .story__content span {
+      color: #79c8c7; }
+  .story__comment-box {
+    height: 31.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .story__comment-box p:first-of-type {
+      margin-top: -2rem;
+      margin-bottom: auto; }
+  .story__client-photo {
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    margin-top: 3.2rem; }
+  .story__client-name {
+    color: #79c8c7; }
+
+.home-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 .header__nav {
   grid-column: center-start / center-end;

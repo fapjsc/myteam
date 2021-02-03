@@ -1,0 +1,51 @@
+.story {
+  position: relative;
+  &__content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 34.6rem));
+    grid-gap: 5.6rem 3rem;
+
+    h3 {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+
+    span {
+      color: $color-blue-light;
+    }
+  }
+
+  &__comment-box {
+    height: 31.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p:first-of-type {
+      margin-top: -2rem;
+      margin-bottom: auto;
+    }
+  }
+
+  &__client-photo {
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    margin-top: 3.2rem;
+  }
+
+  &__client-name {
+    color: $color-blue-light;
+  }
+}
+
+.home-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
