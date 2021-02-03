@@ -38,8 +38,30 @@
 }
 
 .text-box {
-  height: 19.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+// About
+.about-header {
+  position: relative;
+  overflow: hidden;
+  &__content {
+    padding-top: 11.4rem;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns:
+      minmax(min-content, 35rem)
+      minmax(min-content, 73rem);
+
+    grid-template-rows: minmax(min-content, 15.6rem);
+  }
+}
+
+.about-img-1 {
+  position: absolute;
+  bottom: 0;
+  right: -10rem;
 }
