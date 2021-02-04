@@ -30,10 +30,10 @@ const app = Vue.createApp({
     submitForm() {
       this.validation();
       if (!this.formIsValid) {
+        this.formIsValid = true;
         return;
-      } else {
-        alert('submit successfully');
       }
+      alert('submit successfully');
     },
 
     clearErr(input) {
