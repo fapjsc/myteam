@@ -190,7 +190,10 @@ body {
   grid-template-columns: minmax(min-content, 16.5rem) minmax(min-content, 111rem) minmax(min-content, 16.5rem); }
 
 .about-client {
-  background-color: #012f34; }
+  background-color: #012f34;
+  display: grid;
+  grid-template-rows: minmax(min-content, 14rem) minmax(min-content, 16rem) minmax(min-content, 14rem);
+  grid-template-columns: minmax(min-content, 16.5rem) minmax(min-content, 111rem) minmax(min-content, 16.5rem); }
 
 .container {
   max-width: 144rem;
@@ -251,6 +254,24 @@ body {
   .btn-green:hover {
     background-color: #012f34;
     color: #fff; }
+
+.about-client__content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(9.8rem, max-content));
+  grid-column-gap: 8rem; }
+
+.about-client h3 {
+  grid-column: 1 / -1; }
+
+.about-client img:not(:first-child) {
+  align-self: flex-end;
+  max-width: 100%;
+  max-height: 4.5rem; }
+
+.about-client__bg {
+  position: absolute; }
 
 .cta {
   position: relative; }

@@ -34,4 +34,14 @@
 
 .about-client {
   background-color: $color-green-dark-1;
+  display: grid;
+  grid-template-rows:
+    minmax(min-content, 14rem)
+    minmax(min-content, 16rem)
+    minmax(min-content, 14rem);
+
+  grid-template-columns:
+    minmax(min-content, 16.5rem)
+    minmax(min-content, 111rem)
+    minmax(min-content, 16.5rem);
 }
