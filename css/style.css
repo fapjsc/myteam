@@ -227,42 +227,6 @@ body {
       margin-right: 2.3rem; }
     .contact__icon:not(:last-child) {
       margin-bottom: 2rem; }
-  .contact form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* Chrome/Opera/Safari */ }
-    .contact form ::-webkit-input-placeholder {
-      font-size: 1.5rem;
-      line-height: 1.66;
-      font-weight: 600;
-      font-family: inherit;
-      color: #99b8bb; }
-    .contact form ::-ms-input-placeholder {
-      font-size: 1.5rem;
-      line-height: 1.66;
-      font-weight: 600;
-      font-family: inherit;
-      color: #99b8bb; }
-    .contact form > input,
-    .contact form > textarea {
-      background-color: transparent;
-      color: #99b8bb;
-      border: none;
-      border-bottom: 1px solid #dfe9e9;
-      padding-bottom: 1.6rem;
-      font-size: 1.5rem;
-      margin-bottom: 2.4rem;
-      color: #fff;
-      font-weight: 600; }
-      .contact form > input:focus,
-      .contact form > textarea:focus {
-        outline: none; }
-
-.form-btn {
-  align-self: start;
-  background-color: #fff;
-  color: #004047; }
 
 .container {
   max-width: 144rem;
@@ -390,6 +354,50 @@ body {
     position: absolute;
     bottom: 0;
     right: -10rem; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Chrome/Opera/Safari */ }
+  form ::-webkit-input-placeholder {
+    font-size: 1.5rem;
+    line-height: 1.66;
+    font-weight: 600;
+    font-family: inherit;
+    color: #99b8bb; }
+  form ::-ms-input-placeholder {
+    font-size: 1.5rem;
+    line-height: 1.66;
+    font-weight: 600;
+    font-family: inherit;
+    color: #99b8bb; }
+  form > input,
+  form > textarea {
+    background-color: transparent;
+    color: #99b8bb;
+    border: none;
+    border-bottom: 1px solid #dfe9e9;
+    padding-bottom: 1.6rem;
+    font-size: 1.5rem;
+    margin-bottom: 2.4rem;
+    color: #fff;
+    font-weight: 600; }
+    form > input:focus,
+    form > textarea:focus {
+      outline: none; }
+
+.form-btn {
+  align-self: start;
+  background-color: #fff;
+  color: #004047; }
+
+.is-invalid {
+  border-color: #f67e7e; }
+
+.error-message {
+  color: #f67e7e;
+  transform: translateY(-2.2rem); }
 
 .about-meet {
   position: relative;

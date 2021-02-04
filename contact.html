@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div id="app" class="container">
       <header class="contact">
         <nav class="header__nav">
           <img class="header__logo" src="img/logo.svg" alt="logo" />
@@ -59,12 +59,41 @@
             </div>
           </div>
 
-          <form>
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email Address" />
+          <form @submit.prevent="submitForm">
+            <input
+              type="text"
+              placeholder="Name"
+              v-model.trim="name.val"
+              @input="clearErr(name)"
+              :class="{'is-invalid': !name.isValid}"
+            />
+            <span v-if="!name.isValid" class="error-message"
+              >This field is required</span
+            >
+
+            <input
+              type="text"
+              placeholder="Email Address"
+              v-model.trim="email.val"
+              @input="clearErr(email)"
+              :class="{'is-invalid': !email.isValid}"
+            />
+            <span v-if="!email.isValid" class="error-message"
+              >Please use a valid email address</span
+            >
             <input type="text" placeholder="Company Name" />
             <input type="text" placeholder="Title" />
-            <textarea class="test" rows="4" placeholder="Message"></textarea>
+            <textarea
+              rows="4"
+              placeholder="Message"
+              v-model.trim="message.val"
+              :class="{'is-invalid': !message.isValid}"
+              @input="clearErr(message)"
+            ></textarea>
+            <span v-if="!message.isValid" class="error-message"
+              >This field is required</span
+            >
+
             <button class="btn form-btn">submit</button>
           </form>
         </div>
@@ -106,5 +135,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
