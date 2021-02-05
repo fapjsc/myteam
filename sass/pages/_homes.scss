@@ -70,20 +70,20 @@
   background-color: $color-green-dark-2;
   display: grid;
   grid-template-rows:
-    minmax(min-content, 4.8rem)
-    minmax(min-content, 10rem)
-    minmax(min-content, 4.8rem);
+    minmax(4.8rem, min-content)
+    minmax(10rem, min-content)
+    minmax(4.8rem, min-content);
 
   grid-template-columns:
-    minmax(min-content, 16.5rem)
-    minmax(min-content, 111rem)
-    minmax(min-content, 16.5rem);
+    minmax(16.5rem, min-content)
+    minmax(111rem, min-content)
+    minmax(16.5rem, min-content);
 
   @media screen and(max-width: 1070px) {
     grid-template-columns:
-      minmax(min-content, 4rem)
-      minmax(min-content, 111rem)
-      minmax(min-content, 4rem);
+      minmax(4rem, min-content)
+      minmax(111rem, min-content)
+      minmax(4rem, min-content);
   }
 
   @media screen and(max-width: 515px) {

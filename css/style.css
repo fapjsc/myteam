@@ -113,7 +113,7 @@ body {
   @media screen and (max-width: 515px) {
     .footer__content {
       display: grid;
-      grid-template-columns: minmax(min-content, 32.7rem); } }
+      grid-template-columns: minmax(32.7rem, min-content); } }
   .footer__content div:last-child {
     margin-left: auto; }
   .footer__content div:nth-child(2) {
@@ -147,8 +147,8 @@ body {
       justify-content: center; } }
   @media screen and (max-width: 515px) {
     .footer__box--3 {
-      background-color: black;
-      position: absolute; } }
+      display: flex;
+      align-items: center; } }
 
 .footer__socail-icon {
   display: flex;
@@ -177,6 +177,11 @@ body {
     position: absolute;
     right: 0;
     height: 100%; } }
+
+@media screen and (max-width: 515px) {
+  .footer__text {
+    position: relative;
+    margin-top: 1.8rem; } }
 
 @media screen and (max-width: 515px) {
   .footer__list {
@@ -338,11 +343,11 @@ body {
 .footer {
   background-color: #002529;
   display: grid;
-  grid-template-rows: minmax(min-content, 4.8rem) minmax(min-content, 10rem) minmax(min-content, 4.8rem);
-  grid-template-columns: minmax(min-content, 16.5rem) minmax(min-content, 111rem) minmax(min-content, 16.5rem); }
+  grid-template-rows: minmax(4.8rem, min-content) minmax(10rem, min-content) minmax(4.8rem, min-content);
+  grid-template-columns: minmax(16.5rem, min-content) minmax(111rem, min-content) minmax(16.5rem, min-content); }
   @media screen and (max-width: 1070px) {
     .footer {
-      grid-template-columns: minmax(min-content, 4rem) minmax(min-content, 111rem) minmax(min-content, 4rem); } }
+      grid-template-columns: minmax(4rem, min-content) minmax(111rem, min-content) minmax(4rem, min-content); } }
   @media screen and (max-width: 515px) {
     .footer {
       grid-template-columns: minmax(2.4rem, 1fr) minmax(32.7rem, 1fr) minmax(2.4rem, 1fr); } }
