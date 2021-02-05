@@ -17,6 +17,11 @@
     span {
       color: $color-blue-light;
     }
+
+    @media screen and(max-width: 1427px) {
+      grid-template-columns: repeat(auto-fit, minmax(min-content, 57.3rem));
+      justify-content: center;
+    }
   }
 
   &__comment-box {
@@ -29,6 +34,10 @@
     p:first-of-type {
       margin-top: -2rem;
       margin-bottom: auto;
+
+      @media screen and(max-width: 1427px) {
+        margin-bottom: 1.6rem;
+      }
     }
   }
 
@@ -48,4 +57,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+
+  @media screen {
+  }
 }

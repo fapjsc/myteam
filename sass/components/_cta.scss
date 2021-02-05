@@ -1,5 +1,6 @@
 .cta {
   position: relative;
+  overflow: hidden;
 
   &__content {
     grid-row: 2 / 3;
@@ -7,11 +8,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    h3 {
+      @media screen and(max-width: 1190px) {
+        font-size: 3.2rem;
+      }
+    }
   }
 }
 
-.home-6 {
+.story-home-6 {
   position: absolute;
   left: 0;
   bottom: 0;
+  @media screen and(max-width: 1190px) {
+    bottom: -3rem;
+  }
 }

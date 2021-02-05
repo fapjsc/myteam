@@ -6,6 +6,15 @@
     display: flex;
     justify-content: start;
 
+    @media screen and(max-width: 840px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and(max-width: 515px) {
+      display: grid;
+      grid-template-columns: minmax(min-content, 32.7rem);
+    }
+
     div:last-child {
       margin-left: auto;
     }
@@ -19,6 +28,47 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and(max-width: 515px) {
+    }
+
+    &--1 {
+      @media screen and(max-width: 515px) {
+        justify-self: center;
+      }
+    }
+
+    &--2 {
+      @media screen and(max-width: 840px) {
+        flex: 50%;
+        text-align: end;
+        margin-left: 0;
+      }
+
+      @media screen and(max-width: 515px) {
+        margin-left: 0 !important;
+        text-align: center;
+      }
+
+      @media screen and(max-width: 650px) {
+        flex: 30%;
+      }
+    }
+
+    &--3 {
+      @media screen and(max-width: 840px) {
+        width: 100%;
+        position: relative;
+        margin-top: 3.3rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      @media screen and(max-width: 515px) {
+        background-color: black;
+        position: absolute;
+      }
+    }
   }
 
   &__socail-icon {
@@ -26,6 +76,14 @@
     justify-content: flex-end;
     img:not(:first-child) {
       margin-left: 1.6rem;
+    }
+
+    @media screen and(max-width: 840px) {
+      display: inline-block;
+      max-width: 11rem;
+    }
+
+    @media screen and(max-width: 515px) {
     }
 
     svg {
@@ -42,6 +100,35 @@
       &:not(:first-child) {
         margin-left: 1.6rem;
       }
+    }
+  }
+
+  &__text {
+    @media screen and(max-width: 840px) {
+      max-width: 25.5rem;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      height: 100%;
+    }
+
+    @media screen and(max-width: 515px) {
+    }
+  }
+
+  &__list {
+    @media screen and(max-width: 515px) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__logo {
+    @media screen and(max-width: 515px) {
+      height: 2.4rem;
+      width: 9.6rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2.4rem;
     }
   }
 }

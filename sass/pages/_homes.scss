@@ -1,6 +1,10 @@
 .container {
   max-width: 144rem;
   margin: 10rem auto;
+
+  @media screen and(max-width: 1440px) {
+    margin: 0;
+  }
 }
 
 .header {
@@ -32,9 +36,9 @@
   background-color: $color-green-light;
   display: grid;
   grid-template-columns:
-    minmax(min-content, 16.5rem)
-    minmax(min-content, 110rem)
-    minmax(min-content, 16.5rem);
+    minmax(9.8rem, 16.5rem)
+    minmax(max-content, 110rem)
+    minmax(9.8rem, 16.5rem);
   grid-template-rows:
     minmax(min-content, 14rem)
     minmax(min-content, 46.5rem)
@@ -50,9 +54,16 @@
     minmax(min-content, 7.6rem);
 
   grid-template-columns:
-    minmax(min-content, 26rem)
+    minmax(9rem, 26rem)
     minmax(min-content, 91.7rem)
-    minmax(min-content, 26rem);
+    minmax(9rem, 26rem);
+
+  @media screen and(max-width: 1190px) {
+    grid-template-columns:
+      minmax(9rem, 9.8rem)
+      minmax(min-content, 91.7rem)
+      minmax(9rem, 9.8rem);
+  }
 }
 
 .footer {
@@ -67,4 +78,18 @@
     minmax(min-content, 16.5rem)
     minmax(min-content, 111rem)
     minmax(min-content, 16.5rem);
+
+  @media screen and(max-width: 1070px) {
+    grid-template-columns:
+      minmax(min-content, 4rem)
+      minmax(min-content, 111rem)
+      minmax(min-content, 4rem);
+  }
+
+  @media screen and(max-width: 515px) {
+    grid-template-columns:
+      minmax(2.4rem, 1fr)
+      minmax(32.7rem, 1fr)
+      minmax(2.4rem, 1fr);
+  }
 }
