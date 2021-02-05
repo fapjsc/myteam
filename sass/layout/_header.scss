@@ -12,10 +12,20 @@
     span {
       color: $color-primary-caral;
     }
+
+    @media screen and(max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
     height: 20rem;
+    @media screen and(max-width: 768px) {
+      margin-bottom: 2.4rem;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -38,6 +48,11 @@
     grid-column: 7 / center-end;
     align-self: end;
     justify-self: end;
+
+    @media screen and(max-width: 768px) {
+      grid-column: center-start / center-end;
+      justify-self: center;
+    }
   }
 }
 
@@ -45,6 +60,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and(max-width: 768px) {
+    margin-bottom: 5rem;
+  }
+
+  span {
+    @media screen and(max-width: 768px) {
+      display: none;
+    }
+  }
+
+  p {
+    @media screen and(max-width: 768px) {
+      width: 45.7rem;
+      font-size: 1.5rem;
+      line-height: 1.86;
+      text-align: center;
+    }
+  }
 }
 
 // About

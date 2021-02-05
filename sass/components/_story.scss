@@ -51,6 +51,12 @@
   &__client-name {
     color: $color-blue-light;
   }
+
+  br {
+    @media screen and(max-width: 1427px) {
+      display: none;
+    }
+  }
 }
 
 .home-5 {

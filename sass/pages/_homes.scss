@@ -18,6 +18,15 @@
     repeat(8, [col-start] minmax(min-content, 13.875rem) [col-end])
     [center-end]
     minmax(2.4rem, 16.5rem) [full-end];
+
+  @media screen and(max-width: 1170px) {
+    grid-template-columns:
+      [full-start] minmax(2.4rem, 1fr)
+      [center-start]
+      repeat(8, [col-start] minmax(4.69, 1fr) [col-end])
+      [center-end]
+      minmax(2.4rem, 1fr) [full-end];
+  }
 }
 
 .features {
@@ -30,6 +39,15 @@
     [center-end]
     minmax(2.4rem, 16.5rem) [full-end];
   padding: 14rem 0;
+
+  @media screen and(max-width: 1170px) {
+    grid-template-columns:
+      [full-start] minmax(2.4rem, 1fr)
+      [center-start]
+      repeat(8, [col-start] minmax(4.69, 1fr) [col-end])
+      [center-end]
+      minmax(2.4rem, 1fr) [full-end];
+  }
 }
 
 .story {
@@ -43,6 +61,13 @@
     minmax(min-content, 14rem)
     minmax(min-content, 46.5rem)
     minmax(min-content, 14rem);
+
+  @media screen and(max-width: 750px) {
+    grid-template-columns:
+      minmax(2.4rem, 16.5rem)
+      minmax(min-content, 57.3rem)
+      minmax(2.4rem, 16.5rem);
+  }
 }
 
 .cta {
@@ -60,9 +85,9 @@
 
   @media screen and(max-width: 1190px) {
     grid-template-columns:
-      minmax(9rem, 9.8rem)
+      minmax(2.4rem, 9.8rem)
       minmax(min-content, 91.7rem)
-      minmax(9rem, 9.8rem);
+      minmax(2.4rem, 9.8rem);
   }
 }
 
@@ -70,20 +95,20 @@
   background-color: $color-green-dark-2;
   display: grid;
   grid-template-rows:
-    minmax(4.8rem, min-content)
-    minmax(10rem, min-content)
-    minmax(4.8rem, min-content);
+    minmax(min-content, 4.8rem)
+    minmax(min-content, 10rem)
+    minmax(min-content, 4.8rem);
 
   grid-template-columns:
-    minmax(16.5rem, min-content)
-    minmax(111rem, min-content)
-    minmax(16.5rem, min-content);
+    minmax(min-content, 16.5rem)
+    minmax(min-content, 111rem)
+    minmax(min-content, 16.5rem);
 
   @media screen and(max-width: 1070px) {
     grid-template-columns:
-      minmax(4rem, min-content)
-      minmax(111rem, min-content)
-      minmax(4rem, min-content);
+      minmax(min-content, 4rem)
+      minmax(min-content, 111rem)
+      minmax(min-content, 4rem);
   }
 
   @media screen and(max-width: 515px) {
