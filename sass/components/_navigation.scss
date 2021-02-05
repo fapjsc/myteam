@@ -14,7 +14,8 @@
   &__list {
     list-style: none;
     display: flex;
-    margin-right: auto;
+    align-items: center;
+    width: 100%;
 
     @media screen and(max-width: 515px) {
       margin-right: 0;
@@ -38,6 +39,10 @@
     &:hover {
       color: $color-primary-caral;
     }
+  }
+
+  &__btn {
+    margin-left: auto;
   }
 }
 

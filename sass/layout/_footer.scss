@@ -119,8 +119,29 @@
   }
 
   &__list {
+    display: flex;
+
     @media screen and(max-width: 515px) {
       margin-bottom: 2.4rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-primary-caral;
     }
   }
 
