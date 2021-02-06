@@ -17,8 +17,19 @@
     align-items: center;
     width: 100%;
 
-    @media screen and(max-width: 515px) {
-      margin-right: 0;
+    @media screen and(max-width: 650px) {
+      background-color: $color-blue-dark;
+      position: absolute;
+      height: 100%;
+      width: 25.5rem;
+      right: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 12rem;
+      transform: translateX(150%);
+      transition: all 0.5s ease-out;
     }
   }
 
@@ -26,6 +37,11 @@
     display: flex;
     &:not(:last-child) {
       margin-right: 4rem;
+    }
+
+    @media screen and(max-width: 650px) {
+      margin-left: 4.8rem;
+      margin-top: 2.4rem;
     }
   }
 
@@ -43,6 +59,11 @@
 
   &__btn {
     margin-left: auto;
+
+    @media screen and(max-width: 650px) {
+      margin-left: 4.8rem;
+      margin-top: 3.6rem;
+    }
   }
 }
 
@@ -51,4 +72,63 @@
   grid-column: 2 / 3;
   display: flex;
   align-items: center;
+}
+
+.toggle-menu {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 2.4rem;
+  width: 2rem;
+  position: relative;
+}
+
+.toggle-menu span {
+  @media screen and(max-width: 650px) {
+    background-color: #fff;
+    height: 3px;
+    width: 2.4rem;
+    display: block;
+    transition: all 0.2s;
+
+    &:nth-child(2) {
+      transform-origin: 0 0;
+    }
+
+    &:nth-child(4) {
+      transform-origin: 0 -120%;
+    }
+  }
+}
+
+.toggle-menu input {
+  height: 150%;
+  width: 150%;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 20;
+}
+
+.toggle-menu input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translateY(-1px) translateX(3px);
+}
+
+.toggle-menu input:checked ~ span:nth-child(3) {
+  display: none;
+}
+
+.toggle-menu input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translateY(-2px) translateX(0px);
+}
+
+.toggle-menu input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translateY(-2px) translateX(0px);
+}
+
+.slider {
+  transform: translateX(0);
 }

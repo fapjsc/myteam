@@ -1,6 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
+      slider: false,
       name: { val: '', isValid: true },
       email: { val: '', isValid: true },
       message: { val: '', isValid: true },
