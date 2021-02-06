@@ -23,12 +23,14 @@
   </head>
 
   <body>
-    <div class="about-container">
+    <div id="app" class="about-container">
+      <div v-if="slider" class="popup"></div>
+
       <!-- Header -->
       <header class="about-header">
         <nav class="about-nav">
           <img class="header__logo" src="img/logo.svg" alt="logo" />
-          <ul class="header__list">
+          <ul class="header__list" :class="{'slider': slider}">
             <li class="header__item">
               <a href="index.html" class="header__link">home</a>
             </li>
@@ -38,6 +40,11 @@
             <a href="contact.html" class="btn btn-white header__btn"
               >contact us</a
             >
+            <img
+              class="nav-bg"
+              src="/img/bg-pattern-about-1-mobile-nav-1.svg"
+              alt="nav-bg"
+            />
           </ul>
 
           <!-- toggle meun -->
@@ -50,10 +57,10 @@
         </nav>
 
         <div class="about-header__content">
-          <h2 class="heading-2">About</h2>
+          <h2 class="heading-2 about-header__title">About</h2>
           <div class="text-box">
             <span class="short-line short-line-caral"></span>
-            <p class="paragraph-big">
+            <p class="paragraph-big about-header__text">
               We help companies build dynamic teams made up of top global
               talent. Using our network of passionate professionals we drive
               innovation and deliver incredible outcomes. Talented, diverse
@@ -78,7 +85,9 @@
           alt="about-2"
         />
         <div class="about-meet__content">
-          <h3 class="heading-3 text-center">Meet the directors</h3>
+          <h3 class="heading-3 text-center about-meet__title">
+            Meet the directors
+          </h3>
           <div class="about-meet__shape-box">
             <figure class="about-meet__shape text-center">
               <img
@@ -292,7 +301,7 @@
           <a href="contact.html" class="btn btn-green">contact us</a>
         </div>
         <img
-          class="home-6"
+          class="story-home-6"
           src="img/bg-pattern-home-6-about-5.svg"
           alt="home-6"
         />
@@ -337,5 +346,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="/main.js"></script>
   </body>
 </html>

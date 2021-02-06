@@ -4,6 +4,23 @@
   &__content {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+
+    @media screen and(max-width: 755px) {
+    }
+  }
+
+  &__title {
+    @media screen and(max-width: 750px) {
+      font-size: 4rem;
+    }
+
+    @media screen and(max-width: 686px) {
+      font-size: 3.5rem;
+    }
+
+    @media screen and(max-width: 360px) {
+      font-size: 3.2rem;
+    }
   }
 
   &__shape-box {
@@ -12,6 +29,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
     grid-gap: 4.8rem 3rem;
+
+    justify-content: center;
   }
 
   &__shape {
@@ -79,6 +98,10 @@
   position: absolute;
   top: 0;
   left: -10rem;
+
+  @media screen and(max-width: 550px) {
+    top: -10rem;
+  }
 }
 
 .about-meet-img-2 {

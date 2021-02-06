@@ -30,26 +30,12 @@
 
   @media screen and(max-width: 500px) {
     grid-template-columns:
-      [full-start] minmax(2.4rem, 1fr)
+      [full-start] minmax(1rem, 1fr)
       [center-start]
-      repeat(8, [col-start] minmax(4.69rem, 1fr) [col-end])
+      repeat(8, [col-start] minmax(4.1rem, 1fr) [col-end])
       [center-end]
-      minmax(2.4rem, 1fr) [full-end];
-  }
-
-  @media screen and(max-width: 400px) {
-    grid-template-rows: repeat(3, minmax(min-content, 21rem));
-    row-gap: 8rem;
+      minmax(1rem, 1fr) [full-end];
     height: 56.7rem;
-  }
-
-  @media screen and(max-width: 360px) {
-    grid-template-columns:
-      [full-start] minmax(2.4rem, 1fr)
-      [center-start]
-      repeat(8, [col-start] minmax(4.4rem, 1fr) [col-end])
-      [center-end]
-      minmax(2.4rem, 1fr) [full-end];
   }
 }
 
