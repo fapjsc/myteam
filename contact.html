@@ -23,6 +23,8 @@
 
   <body>
     <div id="app" class="container">
+      <div v-if="slider" class="popup"></div>
+
       <header class="contact">
         <img
           class="contact-bg-1"
@@ -31,7 +33,7 @@
         />
         <nav class="header__nav">
           <img class="header__logo" src="img/logo.svg" alt="logo" />
-          <ul class="header__list">
+          <ul class="header__list" :class="{'slider': slider}">
             <li class="header__item">
               <a href="index.html" class="header__link">home</a>
             </li>
@@ -41,6 +43,11 @@
             <a href="contact.html" class="btn btn-white header__btn"
               >contact us</a
             >
+            <img
+              class="nav-bg"
+              src="/img/bg-pattern-about-1-mobile-nav-1.svg"
+              alt="nav-bg"
+            />
           </ul>
 
           <!-- toggle meun -->
@@ -52,10 +59,12 @@
           </div>
         </nav>
         <div class="contact__content">
-          <h2 class="heading-2">Contact</h2>
+          <div class="contact__heading-box">
+            <h2 class="heading-2">Contact</h2>
+            <h3 class="heading-3-small">Ask us about</h3>
+          </div>
 
           <div class="contact__text">
-            <h3 class="heading-3-small">Ask us about</h3>
             <div class="contact__icon-box">
               <div class="contact__icon">
                 <img src="img/icon-person.svg" alt="person" />
