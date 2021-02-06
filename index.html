@@ -17,10 +17,11 @@
       href="./img/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | myteam website challenge - Homepage</title>
+    <title>myteam website - Homepage</title>
   </head>
   <body>
     <div id="app" class="container">
+      <div v-if="slider" class="popup"></div>
       <!-- Header -->
       <header class="header">
         <nav class="header__nav">
@@ -35,6 +36,11 @@
             <a href="contact.html" class="btn btn-white header__btn"
               >contact us</a
             >
+            <img
+              class="nav-bg"
+              src="/img/bg-pattern-about-1-mobile-nav-1.svg"
+              alt="nav-bg"
+            />
           </ul>
 
           <!-- toggle meun -->
